@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: content-box;
+}
+.o-main_width {
+  width: 1200px;
+  margin: auto;
+}
+.c-header {
+  width: 100%;
+  height: 950px;
+  //background-color: grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/Web_0008_Layer-5.png");
+}
+.c-header_nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 140px;
+  background-color: rgba(255, 255, 255, 0.8);
+  //opacity: 0.8;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+.c-header_nav_brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Open Sans";
+  font-size: 35px;
+  font-weight: bold;
+  color: #9bc651;
+  white-space: nowrap
+}
+.c-header_search_icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin-left: 80%;
+  background-image: url("../images/Web_0001_Search.png");
+  background-repeat: no-repeat;
+  
+}
+.c-header_hamburger_menu {
+  width: 40px;
+  height: 30px;
+  position: fixed;
+  top: 54px;
+  margin-left: 90%;
+  background-image: url("../images/Web_0000_Menu.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 1010;
+  &.is-open {
+    z-index: 1020;
+  }
+}
+.js-modal {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.u-modal-content {
+  display: none;
+}
+.c-site-nav-list {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    margin: 20px 0;
+    opacity: 0;
+    transform: translate3d(0, 50px, 0); 
+  }
+  li a {
+    display: block;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+      color: blue;
+    }
+  }
+}
+.js-modal.open {
+  .c-site-nav-list li {
+    opacity: 0.99;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.c-jumbotron {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.c-header_text {
+  font-family: "Open Sans";
+  width: 50%;
+}
+.c-header_text_title {
+  font-size: 35px;
+  color: white;
+  padding-left: 20px;
+  white-space: nowrap;
+}
+.c-header_text_paragraph {
+  font-size: 14px;
+  color: white;
+  padding-left: 20px;
+}
+.c-header_image {
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/Web_0007_iPhone.png");
+  height: 870px;
+  width: 650px;
+  top: 330px;
+  left: 43%;
+}
+.c-text_paragraph {
+  height: 540px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  box-sizing: content-box;
+}
+.c-text_paragraph_article1 {
+  width: 50%;
+  margin-top: 100px;
+  padding-left: 40px;
+}
+.c-text_paragraph_article1_title {
+  font-size: 35px;
+  color: black;
+}
+.c-text_paragraph_article1_text {
+  font-size: 14px;
+  color: grey;
+
+}
+.c-text_paragraph_article2 {
+  width: 50%;
+  font-size: 14px;
+  color: grey;
+  margin-top: 278px;
+  padding-left: 10px;
+  padding-right: 20px;
+ 
+}
+.c-second_section {
+  height: 540px;
+  color: white;
+}
+.c-second_section_first_row{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction:row;
+  position: relative;
+}
+.c-second_section_first_row_article1 {
+  width: 66.6%;
+  height: 100%;
+  background-color: #43463e;
+  p {
+    margin-left: 40px;
+    &:first-child {
+        font-size: 36px;
+    }
+  }
+}
+.c-second_section_first_row_article2 {
+  width: 33.4%;
+  height: 100%;
+  background-color: #37461d;
+  p {
+    margin-left: 40px;
+    &:first-child {
+        font-size: 36px;
+    }
+  }
+}
+.c-second_section_second_row {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction:row;
+  position: relative;
+}
+.c-second_section_second_row_article1 {
+  width: 66.6%;
+  height: 100%;
+  background-color: #091e28;
+  p {
+    margin-left: 40px;
+    &:first-child {
+        font-size: 36px;
+    }
+  }
+}
+.c-second_section_second_row_article2 {
+  width: 33.4%;
+  height: 100%;
+  background-color: #73933c;
+  p {
+    margin-left: 40px;
+    &:first-child {
+        font-size: 36px;
+    }
+  }
+}
+.c-second_section_link {
+  text-decoration: none;
+  color: white;
+  margin-left: 40px;
+  position: absolute;
+  top: 80%;
+  font-weight: bold;
+}
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+}
+@import "modules/media.scss";
+
+
+

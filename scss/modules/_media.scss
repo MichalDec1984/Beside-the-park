@@ -1,0 +1,184 @@
+    @media only screen and (max-width : 335px) {
+        .c-header_image {
+            left: 15%;
+            height: 331px;
+            width: 230px;
+        }
+        .c-header_hamburger_menu {
+            display: none;
+        }
+        .c-text_paragraph_article1 {
+            margin-top: 10px;
+        }
+    }
+       
+
+    @media only screen and (min-width : 335px) and (max-width : 480px) {
+        .c-header_hamburger_menu {
+            display: none;
+        }
+        .c-header_image {
+            left: 25%;
+            height: 351px;
+            width: 250px;
+        }
+        .c-text_paragraph_article1 {
+            margin-top: 20px;
+        }
+
+    }
+    @media only screen and (min-width : 480px) and (max-width : 600px) {
+        .c-header_image {
+            left: 30%;
+            height: 401px;
+            width: 278px;
+        }
+        .c-text_paragraph_article1 {
+            margin-top: 50px;
+        }
+
+    }
+     @media only screen and (min-width : 600px) and (max-width : 768px) {
+        .c-header_image {
+            left: 35%;
+            height: 501px;
+            width: 378px;
+        }
+
+    }
+
+    @media only screen and (max-width : 768px) {
+        .c-header {
+            height: 600px;
+        }
+        .c-header_search_icon {
+            display: none;
+        }
+        .c-header_image {
+            background-image: url("../images/mobile_0001_iPhone.png"); 
+        }
+        .c-text_paragraph {
+            flex-direction: column;
+            height: 100%;
+            align-items: center;
+            margin-bottom: 10%;
+        }
+        .c-text_paragraph_article1 {
+            width: 90%;
+            padding-left: 10px;
+        }
+        .c-text_paragraph_article2 {
+            width: 90%;
+            margin-top: 0px;
+            padding-left: 10px;
+            padding-right: 0;
+        }
+        .c-second_section {
+            height: 100%;
+        }
+        .c-second_section_first_row {
+            flex-direction: column;
+            height: 100%;
+            text-align: center;
+        }
+        .c-second_section_second_row {
+            flex-direction: column;
+            height: 100%;
+            text-align: center;
+        }
+        .c-second_section_first_row_article1 {
+            width: 100%;
+            p {
+                margin-left: 10px;
+                margin-right: 10px;
+                &:first-child {
+                    margin-top: 8%;
+                }
+            }
+        }
+        .c-second_section_first_row_article2 {
+            width: 100%;
+            p {
+                margin-left: 10px;
+                margin-right: 10px;
+                &:first-child {
+                    margin-top: 8%;
+                }
+            }
+        }
+        .c-second_section_second_row_article1 {
+            width: 100%;
+            p {
+                margin-left: 10px;
+                margin-right: 10px;
+                &:first-child {
+                   margin-top: 8%;
+                }
+            }
+        }
+        .c-second_section_second_row_article2 {
+            width: 100%;
+            p {
+                margin-left: 10px;
+                margin-right: 10px;
+                &:first-child {
+                    margin-top: 8%;
+                }
+            }
+        }
+        .c-second_section_link {
+            position: static;
+            top: 0;
+            display: inline-block;
+            margin-bottom: 8%;
+            margin-left: 0px;
+        }
+        .c-header_text {
+            width: 50%;
+        }
+    }
+
+    @media only screen and (min-width : 768px) {
+        .c-header_image {
+            left: 15%;
+      }
+       .c-second_section_first_row_article1 {
+            width: 50%;
+        }
+        .c-second_section_first_row_article2 {
+            width: 50%;
+        }
+        .c-second_section_second_row_article1 {
+            width: 50%;
+        }
+        .c-second_section_second_row_article2 {
+            width: 50%;
+
+        }
+        .c-header_text {
+            width: 50%;
+        }
+    }
+  
+    @media only screen and (max-width : 992px) {
+        .c-text_paragraph {
+            height: 100%;
+        }
+    }
+    
+    @media only screen and (min-width : 992px) {
+        .c-header_image {
+            left: 33%;
+      }
+    }
+     @media only screen and (min-width : 1200px) {
+        .c-header_image {
+            left: 43%;
+      }
+    }
+    @media only screen and (max-width : 1200px) {
+        .o-main_width {
+            width: 100%;
+        }
+
+    }

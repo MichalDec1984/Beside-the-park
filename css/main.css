@@ -1,0 +1,417 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
+
+.o-main_width {
+  width: 1200px;
+  margin: auto; }
+
+.c-header {
+  width: 100%;
+  height: 950px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-image: url("../images/Web_0008_Layer-5.png"); }
+
+.c-header_nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 140px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10; }
+
+.c-header_nav_brand {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-family: "Open Sans";
+  font-size: 35px;
+  font-weight: bold;
+  color: #9bc651;
+  white-space: nowrap; }
+
+.c-header_search_icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin-left: 80%;
+  background-image: url("../images/Web_0001_Search.png");
+  background-repeat: no-repeat; }
+
+.c-header_hamburger_menu {
+  width: 40px;
+  height: 30px;
+  position: fixed;
+  top: 54px;
+  margin-left: 90%;
+  background-image: url("../images/Web_0000_Menu.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  cursor: pointer;
+  z-index: 1010; }
+  .c-header_hamburger_menu.is-open {
+    z-index: 1020; }
+
+.js-modal {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000; }
+  .js-modal.open {
+    opacity: 1;
+    visibility: visible; }
+
+.u-modal-content {
+  display: none; }
+
+.c-site-nav-list {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .c-site-nav-list li {
+    margin: 20px 0;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+            transform: translate3d(0, 50px, 0); }
+  .c-site-nav-list li a {
+    display: block;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none; }
+    .c-site-nav-list li a:hover {
+      color: blue; }
+
+.js-modal.open .c-site-nav-list li {
+  opacity: 0.99;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); }
+
+.c-jumbotron {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.c-header_text {
+  font-family: "Open Sans";
+  width: 50%; }
+
+.c-header_text_title {
+  font-size: 35px;
+  color: white;
+  padding-left: 20px;
+  white-space: nowrap; }
+
+.c-header_text_paragraph {
+  font-size: 14px;
+  color: white;
+  padding-left: 20px; }
+
+.c-header_image {
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-image: url("../images/Web_0007_iPhone.png");
+  height: 870px;
+  width: 650px;
+  top: 330px;
+  left: 43%; }
+
+.c-text_paragraph {
+  height: 540px;
+  background-color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
+
+.c-text_paragraph_article1 {
+  width: 50%;
+  margin-top: 100px;
+  padding-left: 40px; }
+
+.c-text_paragraph_article1_title {
+  font-size: 35px;
+  color: black; }
+
+.c-text_paragraph_article1_text {
+  font-size: 14px;
+  color: grey; }
+
+.c-text_paragraph_article2 {
+  width: 50%;
+  font-size: 14px;
+  color: grey;
+  margin-top: 278px;
+  padding-left: 10px;
+  padding-right: 20px; }
+
+.c-second_section {
+  height: 540px;
+  color: white; }
+
+.c-second_section_first_row {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative; }
+
+.c-second_section_first_row_article1 {
+  width: 66.6%;
+  height: 100%;
+  background-color: #43463e; }
+  .c-second_section_first_row_article1 p {
+    margin-left: 40px; }
+    .c-second_section_first_row_article1 p:first-child {
+      font-size: 36px; }
+
+.c-second_section_first_row_article2 {
+  width: 33.4%;
+  height: 100%;
+  background-color: #37461d; }
+  .c-second_section_first_row_article2 p {
+    margin-left: 40px; }
+    .c-second_section_first_row_article2 p:first-child {
+      font-size: 36px; }
+
+.c-second_section_second_row {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative; }
+
+.c-second_section_second_row_article1 {
+  width: 66.6%;
+  height: 100%;
+  background-color: #091e28; }
+  .c-second_section_second_row_article1 p {
+    margin-left: 40px; }
+    .c-second_section_second_row_article1 p:first-child {
+      font-size: 36px; }
+
+.c-second_section_second_row_article2 {
+  width: 33.4%;
+  height: 100%;
+  background-color: #73933c; }
+  .c-second_section_second_row_article2 p {
+    margin-left: 40px; }
+    .c-second_section_second_row_article2 p:first-child {
+      font-size: 36px; }
+
+.c-second_section_link {
+  text-decoration: none;
+  color: white;
+  margin-left: 40px;
+  position: absolute;
+  top: 80%;
+  font-weight: bold; }
+
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: white; }
+
+@media only screen and (max-width: 335px) {
+  .c-header_image {
+    left: 15%;
+    height: 331px;
+    width: 230px; }
+  .c-header_hamburger_menu {
+    display: none; }
+  .c-text_paragraph_article1 {
+    margin-top: 10px; } }
+
+@media only screen and (min-width: 335px) and (max-width: 480px) {
+  .c-header_hamburger_menu {
+    display: none; }
+  .c-header_image {
+    left: 25%;
+    height: 351px;
+    width: 250px; }
+  .c-text_paragraph_article1 {
+    margin-top: 20px; } }
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  .c-header_image {
+    left: 30%;
+    height: 401px;
+    width: 278px; }
+  .c-text_paragraph_article1 {
+    margin-top: 50px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .c-header_image {
+    left: 35%;
+    height: 501px;
+    width: 378px; } }
+
+@media only screen and (max-width: 768px) {
+  .c-header {
+    height: 600px; }
+  .c-header_search_icon {
+    display: none; }
+  .c-header_image {
+    background-image: url("../images/mobile_0001_iPhone.png"); }
+  .c-text_paragraph {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10%; }
+  .c-text_paragraph_article1 {
+    width: 90%;
+    padding-left: 10px; }
+  .c-text_paragraph_article2 {
+    width: 90%;
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-right: 0; }
+  .c-second_section {
+    height: 100%; }
+  .c-second_section_first_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    text-align: center; }
+  .c-second_section_second_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    text-align: center; }
+  .c-second_section_first_row_article1 {
+    width: 100%; }
+    .c-second_section_first_row_article1 p {
+      margin-left: 10px;
+      margin-right: 10px; }
+      .c-second_section_first_row_article1 p:first-child {
+        margin-top: 8%; }
+  .c-second_section_first_row_article2 {
+    width: 100%; }
+    .c-second_section_first_row_article2 p {
+      margin-left: 10px;
+      margin-right: 10px; }
+      .c-second_section_first_row_article2 p:first-child {
+        margin-top: 8%; }
+  .c-second_section_second_row_article1 {
+    width: 100%; }
+    .c-second_section_second_row_article1 p {
+      margin-left: 10px;
+      margin-right: 10px; }
+      .c-second_section_second_row_article1 p:first-child {
+        margin-top: 8%; }
+  .c-second_section_second_row_article2 {
+    width: 100%; }
+    .c-second_section_second_row_article2 p {
+      margin-left: 10px;
+      margin-right: 10px; }
+      .c-second_section_second_row_article2 p:first-child {
+        margin-top: 8%; }
+  .c-second_section_link {
+    position: static;
+    top: 0;
+    display: inline-block;
+    margin-bottom: 8%;
+    margin-left: 0px; }
+  .c-header_text {
+    width: 50%; } }
+
+@media only screen and (min-width: 768px) {
+  .c-header_image {
+    left: 15%; }
+  .c-second_section_first_row_article1 {
+    width: 50%; }
+  .c-second_section_first_row_article2 {
+    width: 50%; }
+  .c-second_section_second_row_article1 {
+    width: 50%; }
+  .c-second_section_second_row_article2 {
+    width: 50%; }
+  .c-header_text {
+    width: 50%; } }
+
+@media only screen and (max-width: 992px) {
+  .c-text_paragraph {
+    height: 100%; } }
+
+@media only screen and (min-width: 992px) {
+  .c-header_image {
+    left: 33%; } }
+
+@media only screen and (min-width: 1200px) {
+  .c-header_image {
+    left: 43%; } }
+
+@media only screen and (max-width: 1200px) {
+  .o-main_width {
+    width: 100%; } }
